@@ -62,7 +62,10 @@ allowed-tools: Bash(*)
 |Skill类型|推荐权限范围|
 |:----------|:-------------|
 |Git操作|Bash(git status:*),Bash(git addd:*),Bash(git commit:*)|
-|||
+|代码审查|Read,Grep,Glob（只读，不可修改）|
+|部署|Bash(git:*),Bash(npm:*),Bash(ssh:*)（危险，需hooks审计）|
+|PR操作|Bash(git:*),Bash(gh:*)|
+|测试|Bash(npm test:*),Bash(pytest:*)|
   
 
 
