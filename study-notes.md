@@ -68,4 +68,17 @@ allowed-tools: Bash(*)
 |测试|Bash(npm test:*),Bash(pytest:*)|
   
 
+## 渐进式披露架构设计
 
+### 契约式引用
+> SKILL.md 引用辅助文件时，不要只写一个路径——要写一个契约，让 Claude 知道什么时候该加载、加载后能得到什么：
+
+```
+# ❌ 弱引用（Claude 不知道何时该加载）
+See `reference/revenue.md` for more details.
+
+# ✅ 契约式引用（Claude 清楚加载条件和预期内容）
+## Revenue Analysis
+When the user asks about revenue growth, ARPU, or revenue composition:
+→ Load `reference/revenue.md` for calculation formulas and industry benchmarks
+```
