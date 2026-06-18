@@ -86,3 +86,13 @@ See `reference/revenue.md` for more details.
 When the user asks about revenue growth, ARPU, or revenue composition:
 → Load `reference/revenue.md` for calculation formulas and industry benchmarks
 ```
+
+### 知识拆分决策树
+![知识拆分决策树](images/decision-tree.png)
+
+**原则: **
+1. 核心语义内联
+2. 确定逻辑外包
+3. 结构独立
+4. 数据延迟
+5. 示例分离
