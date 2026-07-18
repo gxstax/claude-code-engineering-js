@@ -16,7 +16,7 @@
 ```
 projects/
 ├── 01-safety-hooks/     # 安全三件套：拦截 + 保护 + 审计
-│   ├── hooks/
+│   ├── hooks/Markdown All in One
 │   │   ├── block-dangerous.sh
 │   │   ├── protect-files.sh
 │   │   └── audit-log.sh
