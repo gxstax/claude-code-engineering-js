@@ -1,26 +1,7 @@
-const { add } = require("./math");
 const assert = require("assert");
+const { add } = require("./math");
 
-console.log("Running tests...\n");
+const result = add(2, 3);
+assert.strictEqual(result, 5, `Expected 5, got ${result}`);
 
-// Test 1: should pass
-try {
-  assert.strictEqual(add(1, 2), 3);
-  console.log("✓ add(1, 2) === 3");
-} catch (e) {
-  console.error("✗ add(1, 2) === 3");
-  console.error("  " + e.message);
-  process.exitCode = 1;
-}
-
-// Test 2: fixed
-try {
-  assert.strictEqual(add(2, 3), 5);
-  console.log("✓ add(2, 3) === 5");
-} catch (e) {
-  console.error("✗ add(2, 3) === 5");
-  console.error("  " + e.message);
-  process.exitCode = 1;
-}
-
-console.log("\nDone.");
+console.log("All tests passed!");

@@ -1,0 +1,58 @@
+{
+  "mcpServers": {
+    "context7": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@upstash/context7-mcp@latest"],
+      "description": "上下文管理——为对话附加长尾知识库"
+    },
+    "filesystem": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "@modelcontextprotocol/server-filesystem",
+        "."
+      ],
+      "description": "文件系统操作——读写、搜索、目录遍历"
+    },
+    "fetch": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": ["mcp-server-fetch"],
+      "description": "HTTP 请求——抓取网页内容"
+    },
+    "memory": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["@modelcontextprotocol/server-memory"],
+      "description": "持久化记忆——跨会话存储关键信息"
+    },
+    "github": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["@modelcontextprotocol/server-github"],
+      "env": {
+        "GITHUB_TOKEN": "${GITHUB_TOKEN}"
+      },
+      "description": "GitHub API——管理 Issue、PR、代码审查"
+    },
+    "notion": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["@modelcontextprotocol/server-notion"],
+      "env": {
+        "NOTION_API_KEY": "${NOTION_API_KEY}"
+      },
+      "description": "Notion 集成——读写数据库和页面"
+    },
+    "database": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["@modelcontextprotocol/server-mysql"],
+      "env": {
+        "DATABASE_URL": "${DATABASE_URL}"
+      },
+      "description": "MySQL 数据库——执行 SQL 查询"
+    }
+  }
+}

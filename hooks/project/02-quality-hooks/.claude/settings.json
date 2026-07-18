@@ -37,6 +37,17 @@
           }
         ]
       }
+    ],
+    "SubagentStop": [
+      { 
+        "matcher": "code-reviewer", 
+        "hooks": [ 
+          { 
+            "type": "command", 
+            "command": "./hooks/verify-review-quality.sh" 
+          } 
+        ] 
+      }
     ]
   }
 }
