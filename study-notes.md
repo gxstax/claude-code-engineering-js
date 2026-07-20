@@ -1,4 +1,14 @@
-#
+# Claude Code 核心机制
+
+1. Memory（记忆）
+2. SubAgents（分工）
+3. Skills（领域能力）
+4. Commands（标准流程）
+5. Hooks（安全防护）
+6. MCP（外部连接）
+7. Tools（工具基础）
+8. Rules（行为约束）
+   
 # skills
 
 ## description 写作公式
